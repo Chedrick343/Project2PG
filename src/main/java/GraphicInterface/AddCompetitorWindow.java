@@ -74,6 +74,18 @@ public class AddCompetitorWindow extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 0, 0));
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
         jComboBox2.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 jComboBox2ItemStateChanged(evt);
@@ -98,6 +110,12 @@ public class AddCompetitorWindow extends javax.swing.JFrame {
         }
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
+
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Nombre");
         jLabel1.setOpaque(true);
@@ -152,6 +170,12 @@ public class AddCompetitorWindow extends javax.swing.JFrame {
 
         jLabel16.setText("Deporte");
         jLabel16.setOpaque(true);
+
+        genersComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                genersComboBoxActionPerformed(evt);
+            }
+        });
 
         jLabel17.setText("Género");
         jLabel17.setOpaque(true);
@@ -381,6 +405,22 @@ public class AddCompetitorWindow extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void genersComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genersComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_genersComboBoxActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
 private void changeDays(){
     
 }

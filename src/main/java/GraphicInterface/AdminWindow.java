@@ -172,7 +172,7 @@ public class AdminWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        AddCompetitorWindow window = new AddCompetitorWindow();
+        AddPerson window = new AddPerson();
         window.setVisible(true);
 
         // TODO add your handling code here:

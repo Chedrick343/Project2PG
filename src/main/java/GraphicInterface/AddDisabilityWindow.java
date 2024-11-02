@@ -5,12 +5,15 @@
 package GraphicInterface;
 
 import javax.swing.JFrame;
+import DBProcedures.GetSetData;
 
 /**
  *
  * @author chedr
  */
 public class AddDisabilityWindow extends javax.swing.JFrame {
+    
+    GetSetData getElements = new GetSetData();
 
     /**
      * Creates new form AddDisabilityWindow
@@ -31,7 +34,7 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        disabiltyTextField = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -40,6 +43,12 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
 
         jLabel1.setText("Nombre de la discapacidad");
         jLabel1.setOpaque(true);
+
+        disabiltyTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                disabiltyTextFieldActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Agregar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +68,7 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(372, 372, 372))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(disabiltyTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(347, 347, 347))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1)
@@ -71,7 +80,7 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
                 .addGap(191, 191, 191)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(disabiltyTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addContainerGap(301, Short.MAX_VALUE))
@@ -92,8 +101,13 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+        getElements.insertDisability(disabiltyTextField.getText());
+        System.out.println("exito");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void disabiltyTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_disabiltyTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_disabiltyTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,9 +145,9 @@ public class AddDisabilityWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField disabiltyTextField;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

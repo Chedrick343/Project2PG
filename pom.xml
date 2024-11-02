@@ -24,4 +24,5 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+    <name>Project2PG</name>
 </project>

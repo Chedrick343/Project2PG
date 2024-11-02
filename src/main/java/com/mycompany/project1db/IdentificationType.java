@@ -10,22 +10,11 @@ package com.mycompany.project1db;
  * @author samia
  */
 public class IdentificationType {
-    private int ID_IdentificationType;
     private String name;
 
-    public IdentificationType(int ID_IdentificationType, String name) {
-        this.ID_IdentificationType = ID_IdentificationType;
+    public IdentificationType(String name) {
         this.name = name;
     }
-
-    public int getID_IdentificationType() {
-        return ID_IdentificationType;
-    }
-
-    public void setID_IdentificationType(int ID_IdentificationType) {
-        this.ID_IdentificationType = ID_IdentificationType;
-    }
-
     public String getName() {
         return name;
     }
