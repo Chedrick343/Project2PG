@@ -12,6 +12,7 @@ Connection\DataBaseConnection.class
 com\mycompany\project1db\CountryXParalympic.class
 GraphicInterface\principalWindow$4.class
 GraphicInterface\AddDisabilityWindow$2.class
+GraphicInterface\AdminWindow$6.class
 GraphicInterface\AdminWindow$3.class
 GraphicInterface\AddAdminWindow$5.class
 com\mycompany\project1db\District.class
@@ -24,6 +25,7 @@ com\mycompany\project1db\Email.class
 GraphicInterface\AddTeamWindow.class
 GraphicInterface\SportsWindow$1.class
 GraphicInterface\principalWindow$1.class
+GraphicInterface\AddCompetitor$1.class
 com\mycompany\project1db\Country.class
 com\mycompany\project1db\Province.class
 GraphicInterface\RegisterRecordWindow.class
@@ -31,6 +33,7 @@ GraphicInterface\SportsWindow$4.class
 GraphicInterface\RankingWindow$2.class
 GraphicInterface\PersonsWindow$3.class
 GraphicInterface\AdminWindow$1.class
+GraphicInterface\AddCompetitor$4.class
 GraphicInterface\principalWindow$2.class
 GraphicInterface\AddCompetitorWindow$1.class
 com\mycompany\project1db\Picture.class
@@ -43,9 +46,11 @@ GraphicInterface\ShowAdminWindow$1.class
 GraphicInterface\AddCompetitionWindow$3.class
 GraphicInterface\AddPerson$1.class
 com\mycompany\project1db\Project1DB.class
+GraphicInterface\AddPerson$12.class
 GraphicInterface\RegisterMedalWindow$1.class
 com\mycompany\project1db\Medal.class
 GraphicInterface\AddCompetitionWindow.class
+GraphicInterface\AddCompetitor$3.class
 GraphicInterface\principalWindow$3.class
 GraphicInterface\AddCoachWindow$5.class
 GraphicInterface\AddDisabilityWindow.class
@@ -57,6 +62,7 @@ com\mycompany\project1db\PersonXPhone.class
 GraphicInterface\PersonsWindow$5.class
 com\mycompany\project1db\CompetitorXDisability.class
 DBProcedures\GetSetData.class
+GraphicInterface\ShowPeople$1.class
 GraphicInterface\AdminWindow$2.class
 GraphicInterface\AddCompetitionWindow$4.class
 GraphicInterface\AddCompetitorWindow$2.class
@@ -64,6 +70,7 @@ com\mycompany\project1db\Competition.class
 GraphicInterface\AddPerson$2.class
 com\mycompany\project1db\MedalType.class
 GraphicInterface\RankingWindow.class
+GraphicInterface\AddCompetitor$2.class
 GraphicInterface\AddCoachWindow$4.class
 GraphicInterface\AddPerson.class
 GraphicInterface\SportsWindow$2.class
@@ -72,17 +79,20 @@ com\mycompany\project1db\Coach.class
 GraphicInterface\RegisterRecordWindow$1.class
 com\mycompany\project1db\ParalympicXCompetition.class
 GraphicInterface\AddCoachWindow$1.class
+GraphicInterface\AddCompetitor$5.class
 GraphicInterface\AddCountryWindow$1.class
 GraphicInterface\PersonsWindow$4.class
 GraphicInterface\AdminWindow.class
 com\mycompany\project1db\Team.class
 com\mycompany\project1db\PhoneType.class
+GraphicInterface\ShowPeople.class
 com\mycompany\project1db\GenderType.class
 com\mycompany\project1db\Disability.class
 GraphicInterface\RegisterMedalWindow.class
 com\mycompany\project1db\CompetitionType.class
 GraphicInterface\AddAdminWindow$4.class
 GraphicInterface\AddCompetitionWindow$2.class
+GraphicInterface\AddCompetitor.class
 GraphicInterface\AddDisabilityWindow$3.class
 GraphicInterface\principalWindow$5.class
 GraphicInterface\AdminWindow$4.class
@@ -90,6 +100,7 @@ GraphicInterface\AddPerson$7.class
 GraphicInterface\AddAdminWindow.class
 GraphicInterface\AddPerson$11.class
 GraphicInterface\AddCompetitorWindow$7.class
+GraphicInterface\AdminWindow$7.class
 GraphicInterface\PersonsWindow.class
 GraphicInterface\AddAdminWindow$1.class
 GraphicInterface\AddDisabilityWindow$1.class
@@ -97,6 +108,7 @@ com\mycompany\project1db\Person.class
 GraphicInterface\AddPerson$4.class
 GraphicInterface\AddAdminWindow$3.class
 GraphicInterface\AddCompetitorWindow$4.class
+GraphicInterface\AddCompetitor$7.class
 GraphicInterface\AddCoachWindow$3.class
 GraphicInterface\SportsWindow$3.class
 com\mycompany\project1db\MedalXCompetitorXCompetition.class
@@ -113,4 +125,5 @@ GraphicInterface\principalWindow$6.class
 GraphicInterface\AddCountryWindow.class
 com\mycompany\project1db\Competitor.class
 GraphicInterface\AddCoachWindow$2.class
+GraphicInterface\AddCompetitor$6.class
 GraphicInterface\AddPerson$5.class

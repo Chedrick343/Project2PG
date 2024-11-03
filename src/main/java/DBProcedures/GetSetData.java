@@ -100,4 +100,36 @@ public class GetSetData {
         }
         
     }
+    
+    public ArrayList<Team> getTeams(){
+        ArrayList<Team> List = new ArrayList<>();
+        DataBaseConnection connection = new DataBaseConnection();
+        try (ResultSet result = connection.getConn().prepareCall("{CALL getTeams()}").executeQuery()) {
+            while(result.next()){
+                Team team = new Team(result.getString("TEAMNAME"), result.getInt("QUANTITYMEMBERS"));
+                List.add(team);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(GetSetData.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        connection.desconectar();
+        return List;
+    }
+    
+    
+    public void insertCompetitor(int IdentificationNumber, int ClasificationScore, String TeamName){
+        
+        DataBaseConnection connection = new DataBaseConnection();
+        try {
+            stmt = connection.getConn().prepareCall("{CALL AddCompetitor(?, ?, ?)}");
+            stmt.setInt(1, IdentificationNumber);
+            stmt.setInt(2, ClasificationScore);
+            stmt.setString(3, TeamName);
+            stmt.execute();
+            System.out.println("hola");
+        } catch (SQLException ex) {
+            Logger.getLogger(GetSetData.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 }

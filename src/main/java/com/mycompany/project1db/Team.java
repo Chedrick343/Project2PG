@@ -9,24 +9,13 @@ package com.mycompany.project1db;
  * @author samia
  */
 public class Team {
-    private int ID_Team;
     private String TeamName;
     private int QuantityMembers;
 
-    public Team(int ID_Team, String TeamName, int QuantityMembers) {
-        this.ID_Team = ID_Team;
+    public Team(String TeamName, int ID_Team) {
         this.TeamName = TeamName;
         this.QuantityMembers = QuantityMembers;
     }
-
-    public int getID_Team() {
-        return ID_Team;
-    }
-
-    public void setID_Team(int ID_Team) {
-        this.ID_Team = ID_Team;
-    }
-
     public String getTeamName() {
         return TeamName;
     }
