@@ -7,6 +7,8 @@ import DBProcedures.GetSetData;
 import com.mycompany.project1db.Country;
 import com.mycompany.project1db.GenderType;
 import com.mycompany.project1db.IdentificationType;
+import java.awt.HeadlessException;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -461,8 +463,9 @@ public class AddPerson extends javax.swing.JFrame {
         String GenderName = (String) GenderComboBox.getSelectedItem();
         String IdentificationName = (String) IDTypeComboBox.getSelectedItem();
         getElements.insertPerson(IdentificationNumber, FirstName, SecondName, FirstLastName, SecondLastName, BirthDate, CountryName, GenderName, IdentificationName);
-        System.out.println("Persona añadida");
-        JOptionPane.showMessageDialog(null, "La persona se ha añadido exitosamente", "Advertencia!", JOptionPane.INFORMATION_MESSAGE);
+        
+
+
 
         
     }//GEN-LAST:event_AddButtonActionPerformed
